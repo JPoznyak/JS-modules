@@ -25,4 +25,6 @@ function loadScript(urls, path) {
     });
 }
 
+loadScript(['/.common.js', './timer.js', './form.js'], () => {
 
+})
