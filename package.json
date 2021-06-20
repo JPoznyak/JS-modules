@@ -5,14 +5,16 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "build": "webpack",
+    "start": "webpack serve"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.1",
-    "howler": "^2.2.1"
+    "howler": "^2.2.1",
+    "luxon": "^1.27.0"
   },
   "repository": {
     "type": "git",
@@ -21,5 +23,17 @@
   "bugs": {
     "url": "https://github.com/JPoznyak/JS-modules/issues"
   },
-  "homepage": "https://github.com/JPoznyak/JS-modules#readme"
+  "homepage": "https://github.com/JPoznyak/JS-modules#readme",
+  "devDependencies": {
+    "css-loader": "^5.2.6",
+    "html-webpack-plugin": "^5.3.1",
+    "mini-css-extract-plugin": "^1.6.0",
+    "sass": "^1.35.1",
+    "sass-loader": "^12.1.0",
+    "style-loader": "^2.0.0",
+    "webpack": "^5.39.1",
+    "webpack-bundle-analyzer": "^4.4.2",
+    "webpack-cli": "^4.7.2",
+    "webpack-dev-server": "^3.11.2"
+  }
 }
