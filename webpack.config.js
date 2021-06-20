@@ -15,7 +15,16 @@ module.exports = {
             {
                 test: /\.s[ca]ss$/, 
                 use: [MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader']
-            }
+            },
+            {
+                test: /\\.(png|jpe?g|gif|mp3)$/i, 
+                use: 'file-loader'
+            },
+            {
+                test: /\.(js)$/,
+                exclude: /node_modules/,
+                use: ['babel-loader']
+              }
         ]
     },
 
