@@ -1,5 +1,7 @@
-// import {Howl, Howler} from 'howler';
-import './howler.js';
+// import './howler.js';
+
+// при импорте зависимостей лучше импортировать только необходимые функции/компоненты из библиотек
+import {Howl, Howler} from 'howler';
 
 // Setup the new Howl.
 const sound = new Howl({
